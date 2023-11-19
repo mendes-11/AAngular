@@ -1,11 +1,7 @@
 <nav>
-    <p>
-        <mat-toolbar class="navbar">
-          <span class="home">Home</span>
-          <span>agenda</span>
-          <span>calendario</span>
-        </mat-toolbar>
-      </p>
-
-  </nav>
-  
+  <mat-toolbar class="navbar">
+    <span class="home" (click)="navigateToHome()">Home</span>
+    <span (click)="navigateToCliente()">Clientes</span>
+    <span>Calendario</span>
+  </mat-toolbar>
+</nav>

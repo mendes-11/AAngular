@@ -1,5 +1,3 @@
-<!-- <a href="/home">Home</a> -->
-
 <div class="body">
     <mat-card>
         <p class="title">Agenda</p>
@@ -11,7 +9,8 @@
 
             <mat-form-field class="example-full-width">
                 <mat-label>Senha</mat-label>
-                <input matInput placeholder="Ex. Senha123">
+                <input [type]="hide ? 'password' : 'text'" matInput placeholder="Ex. Senha123" [(ngModel)]="password">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </mat-form-field>
         </form>
         <section>

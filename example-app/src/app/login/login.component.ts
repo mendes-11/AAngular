@@ -9,13 +9,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-login',
   standalone: true,
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
-  imports: [CommonModule,
+  imports: [
+          CommonModule,
           FormsModule,
           MatFormFieldModule,
           MatInputModule, 
@@ -24,8 +26,13 @@ import { MatCardModule } from '@angular/material/card';
           MatDividerModule, 
           MatInputModule, 
           MatCardModule,
+          MatCheckboxModule,
         ],
 })
 export class LoginComponent {
+
+  hide = true;
+  username = '';
+  password = '';
 
 }
