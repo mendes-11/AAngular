@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+.example-spacer {
+    flex: 1 1 auto;
+
+}
+
+.navbar {
+    /* color: #006494 ; */
+    /* color: #98c3ed ; */
+    /* background-color: rgba(124, 126, 138, 0.548); */
+    color: #247ba0;
+    background-color: #e8f1f2;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* .home{
+    font-size: 50px;
+    padding-right: 10px;
+} */
+
+.navbar span {
+    margin: 0 10px;
+    /* Adiciona um pouco de espaço entre os spans */
+}
+
+/* Para alinhar o primeiro span à esquerda */
+.navbar span.home {
+    margin-right: 20px;
+    font-size: 35px;
+    padding-right: 10px;
+
+}
